@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:ss="http://pathToProgramming.tech/soapy-sinq">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ss:getSinqRequest>
+            <ss:modelNumber>KCH-1000</ss:modelNumber>
+        </ss:getSinqRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

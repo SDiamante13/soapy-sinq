@@ -1,0 +1,34 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://pathToProgramming.tech/soapy-sinq"
+           targetNamespace="http://pathToProgramming.tech/soapy-sinq"
+           elementFormDefault="qualified">
+    <xs:element name="getSinqRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="modelNumber" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getSinqResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sinkDetails" type="tns:sinkDetails"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="sinkDetails">
+        <xs:sequence>
+            <xs:element name="modelNumber" type="xs:string"/>
+            <xs:element name="SKUNumber" type="xs:string"/>
+            <xs:element name="modelName" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="numOfBowls" type="xs:int"/>
+            <xs:element name="length" type="xs:double"/>
+            <xs:element name="depth" type="xs:double"/>
+            <xs:element name="sinkMaterial" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
